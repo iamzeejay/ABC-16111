@@ -1,9 +1,9 @@
 provider "azurerm" {
   features {}
-   subscription_id = "479e7ef8-f6ea-410b-a45f-f525de24da85"
-  client_id       = "0491dec1-ae70-4227-8a4b-abc301e81e63"
-  client_secret   = "LqR8Q~MPSsMRVfRmBxOLTPOWT-85.AWg0yz3MaLx"
-  tenant_id       = "f1e36000-ec35-4066-aff2-9eaa65df1924"
+  client_id       = var.azure_client_id
+  client_secret   = var.azure_client_secret
+  subscription_id = var.azure_subscription_id
+  tenant_id       = var.azure_tenant_id
 
 }
 
